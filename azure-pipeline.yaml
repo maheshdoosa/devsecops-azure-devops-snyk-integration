@@ -1,13 +1,13 @@
 trigger:
-- master
+- main
 
 pool:
   vmImage: ubuntu-latest
 
 variables:
 - group: "SECURE_TOKENS"
-- name: snyk_token
-  value: $[variables.SNYKTOKEN]
+# - name: snyk_token
+#   value: $[variables.SNYKTOKEN]
 
 steps:
 - script: |
